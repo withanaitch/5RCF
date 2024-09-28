@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='color.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>5 random colors</title>
+    </head>
+    <body>
+        {% for bg, fg in colors %}
+        <div style="background-color: #{{ bg }}; color: #{{ fg }}">
+            <p>#{{ bg }}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>

@@ -1,0 +1,20 @@
+/* reset */
+body, p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+	font-size: min(10vh, 20vw);
+}
+@media all and (min-height:800px) {html {font-size: 80px;}}
+div {
+    height: 20vh;
+	display: flex;
+}
+div p {
+    margin: auto 2.5vw;
+	opacity: 0.8;
+}
